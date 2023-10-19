@@ -1,0 +1,753 @@
+<HTML>
+    
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="icon" type="image/x-icon" href="https://i.ibb.co/fGjWPLZ/Google-play-logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        <meta name="google-adsense-account" content="ca-pub-6838430090470487">
+        
+        <style>
+    
+
+     body{
+        background-color: #161719;
+        font-family: 'Inter';
+        color: white;
+        margin: 0;
+        padding: 0;
+     }
+
+     .card1{
+        width: 200px;
+        height: 100px;
+        background-color: #2d2c2a;
+        border-radius: 12px;
+        color: white;
+     }
+
+     .title1{
+        color: white;
+        font-family: 'Inter';
+     }
+
+
+     #home_page{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+     }
+
+     .responsive_div1{
+      margin-top: 30px;
+     }
+
+     
+
+     /*EFFETTO TYPE*/
+
+     #typed-text {
+            white-space: pre;
+            font-size: 25px;
+        }
+
+        #typed {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .blinking-cursor {
+            animation: blink 1s step-end infinite;
+            display: inline-block;
+            width: 30px;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        #activity-text {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+        
+            #typed-text,
+            #typed,
+            #activity-text {
+                font-size: 20px;
+            }
+
+            .container{
+                margin-top: 40px;
+            }
+
+        }
+
+
+        /*HEADER*/
+
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px; 
+            background: url('https://i.ibb.co/Jd8PZTL/Try-it-now-2.png') center/cover no-repeat;
+            border-bottom-left-radius: 30px ;
+            border-bottom-right-radius: 30px ;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff00;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-bottom-left-radius: 35px ;
+            border-bottom-right-radius: 35px ;
+        }
+
+        .overlay h1 {
+            margin: 0;
+        }
+
+        .overlay p {
+            margin: 10px 0;
+        }
+
+        .text1{
+            color: white;
+            width: 90%;
+            margin-bottom: 0px;
+            
+        }
+
+
+        /*3D TOWER*/
+
+.loader {
+  scale: 4;
+  height: 50px;
+  width: 40px;
+}
+
+.box {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+}
+
+.side-left {
+  position: absolute;
+  background-color: #9f4236;
+  width: 19px;
+  height: 5px;
+  transform: skew(0deg, -25deg);
+  top: 14px;
+  left: 10px;
+}
+
+.side-right {
+  position: absolute;
+  background-color: #9f4236;
+  width: 19px;
+  height: 5px;
+  transform: skew(0deg, 25deg);
+  top: 14px;
+  left: -9px;
+}
+
+.side-top {
+  position: absolute;
+  background-color: #f84f3a;
+  width: 20px;
+  height: 20px;
+  rotate: 45deg;
+  transform: skew(-20deg, -20deg);
+}
+
+.box-1 {
+  animation: from-left 4s infinite;
+}
+
+.box-2 {
+  animation: from-right 4s infinite;
+  animation-delay: 1s;
+}
+
+.box-3 {
+  animation: from-left 4s infinite;
+  animation-delay: 2s;
+}
+
+.box-4 {
+  animation: from-right 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes from-left {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: -20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: 20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
+
+
+
+    /*CHECKBOX BUTTON FIVERR*/
+
+
+    #checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(99, 99, 99);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(126, 126, 126);
+  box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+}
+
+.powersign {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  border: 4px solid rgb(48, 48, 48);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.powersign::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background-color: rgb(99, 99, 99);
+  position: absolute;
+  top: -60%;
+  z-index: 2;
+}
+
+.powersign::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: rgb(48, 48, 48);
+  position: absolute;
+  top: -60%;
+  z-index: 3;
+}
+
+#checkbox:checked + .switch .powersign {
+  border: 4px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgb(151, 243, 255),
+    0px 0px 5px rgb(151, 243, 255) inset;
+}
+
+#checkbox:checked + .switch .powersign::after {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(151, 243, 255);
+}
+
+#checkbox:checked + .switch {
+  box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
+    0px 0px 2px rgb(151, 243, 255) inset,
+    0px 0px 10px rgb(151, 243, 255) inset,
+    0px 0px 40px rgb(151, 243, 255),
+    0px 0px 100px rgb(151, 243, 255),
+    0px 0px 5px rgb(151, 243, 255);
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(146, 180, 184);
+}
+
+#checkbox:checked + .switch .powersign::before {
+  background-color: rgb(146, 180, 184);
+}
+
+
+      
+         /*LAYOUT RESPONSIVI*/
+
+        @media (max-width: 550px) {
+
+      .responsive_div1{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+      }
+
+
+      .img2{
+        display: none !important;
+      }
+
+      .img3{
+        width: 100% !important;
+        transform: skewY(0deg) !important;
+        transform: skewX(0deg) !important;
+        transform: rotate(10deg) !important;
+        width: 75% !important;
+      }
+
+   }
+
+
+
+
+
+@media (min-width: 551px) {
+
+  .responsive_div1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      
+      }
+
+
+      .h_1{
+        font-size: 30px !important;
+        margin-top: 40px !important;
+        margin-left: 40px !important;
+      }
+
+
+      .p_1{
+        font-size: 20px !important;
+        margin-left: 40px !important;
+      }
+
+     
+      
+      .img1{
+        display: none !important;
+      }
+
+      .img2{
+        display: flex !important;
+        width: 240px !important;
+        height: 240px !important;
+        margin-right: 30px !important;
+      }
+
+      .img3{
+        margin-left: 80px !important;
+      }
+
+
+      .h_2{
+        font-size: 30px !important;
+        margin-left: 100px !important;
+        margin-right: 30px !important;
+      }
+
+      .p_2{
+        font-size: 20px !important;
+        margin-left: 100px !important;
+        margin-right: 30px !important;
+      }
+
+      .div_img_1{
+        display: none !important;
+      }
+
+      .div_img_2{
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 20px !important;
+        margin-left: 150px !important;
+        margin-right: 70px !important;
+      }
+
+      .h_3{
+        font-size: 30px !important;
+        margin-top: 60px !important;
+        margin-left: 40px !important;
+      }
+
+      
+      .p_3{
+        font-size: 20px !important;
+        margin-left: 40px !important;
+      }
+
+
+      .div_img_3{
+        margin-right: 30px !important;
+      }
+
+
+      .h_4{
+        font-size: 30px !important;
+        margin-top: 50px !important;
+      }
+
+      .p_4{
+        font-size: 20px !important;
+        
+      }
+
+
+      .card{
+        margin-left: 50px !important;
+        width: 50% !important;
+      }
+
+      .loader{
+        margin-right: 60px;
+      }
+
+      .img3{
+        width: 100% !important;
+      }
+    }
+
+
+       @media (min-width: 1100px) {
+
+        .responsive_div1{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+      }
+
+      .card{
+        margin-left: 50px !important;
+        width: 30% !important;
+      }
+
+      .h_1{
+       font-size: 30px;
+      }
+
+      .p_1{
+        font-size: 20px;
+      }
+
+      .h_2{
+       font-size: 30px;
+       margin-left: 100px !important;
+      }
+
+      .p_2{
+        font-size: 20px;
+        margin-left: 100px !important;
+        margin-bottom: 100px !important;
+      }
+
+      .h_3{
+       font-size: 30px;
+      }
+
+      .p_3{
+        font-size: 20px;
+      }
+
+      .h_4{
+       font-size: 30px;
+      }
+
+      .p_4{
+        font-size: 20px;
+      }
+
+      .loader{
+        scale: 5.5;
+      }
+
+      .img3{
+        width: 100% !important;
+        transform: skewY(-10deg) !important;
+        transform: skewX(5deg) !important;
+        margin-right: 40px !important;
+        margin-left: 80px !important;
+      }
+
+      .iframe_responsive_animation1{
+        width: 200px;
+        margin-left: 30px !important;
+      }
+
+      .img_4{
+        margin-left: 40px !important;
+      }
+
+      .img_5{
+        margin-left: 40px !important;
+        width: 100% !important;
+      }
+
+
+       }
+
+
+
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+
+        <div class="header">
+            <div class="overlay">
+        <div class="responsive_div1" style="display: flex; flex-direction: row; width: 100%; height: 100%; align-items: center; justify-content: center;">
+
+         </div>
+        </div>
+      </div>
+       
+
+
+      
+
+
+
+      <div id="home_page">
+
+        <div class="responsive_div1">
+         <div style="display: flex; align-items: center; justify-content: center;">
+         <img class="img1" src="https://i.ibb.co/5LFYfr0/hpn-png.png" style="width: 100%; margin-top: 30px; margin-bottom: 30px;">
+         </div>
+         <div>
+         <h2 class="h_1" style="margin-left: 20px; margin-bottom: 0px; margin-top: 2px;">Chi siamo?</h2>
+         <p class="p_1" style="margin-left: 20px; margin-right: 20px; margin-top: 5px;">Siamo una startup italiana nata nel 2023 con lo scopo di ridare fiducia al mondo cripto. Vogliamo partire da piccoli passi per arrivare a grandi ecosistemi, per questo crediamo che ogni utente sia importante per la realizzazione di un sistema di questo tipo.</p>
+        </div>
+        <img class="img2" src="https://i.ibb.co/5LFYfr0/hpn-png.png" style="margin-left: 50px; margin-top: 20px; object-fit:contain; width: 40% !important;">
+        </div>
+
+
+        <div class="responsive_div1">
+        <div style="display: flex; align-items: center; justify-content: center;">
+        <img class="img3" src="https://i.ibb.co/ChGns0D/screen1.png" style="width: 80%; margin-top: 20px; transform: skewY(-5deg);">
+        </div>
+        <div>
+        <h2 class="h_2" style="margin-left: 20px; margin-bottom: 0px; margin-top: 20px;">Che cos'è hpn app?</h2>
+        <p class="p_2" style="margin-left: 20px; margin-right: 20px; margin-top: 5px;">Hpn app è un'app che punta alla collettività, un network attraverso il quale vorremmo permettere agli utenti di poter ricavare dei profitti semplicemente svolgendo delle task grazie alle aziende e start up che decidono di darci fiducia sponsorizzandosi sulla nostra piattaforma. </p>
+     </div>
+      </div>
+ 
+
+
+     
+
+        <div class="responsive_div1">
+           <div class="div_img_1">
+            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: -30px;">
+                <div class="loader" style="margin-top: 80px; margin-bottom: 60px;">
+                    <div class="box box-1">
+                      <div class="side-left"></div>
+                      <div class="side-right"></div>
+                      <div class="side-top"></div>
+                    </div>
+                    <div class="box box-2">
+                      <div class="side-left"></div>
+                      <div class="side-right"></div>
+                      <div class="side-top"></div>
+                    </div>
+                    <div class="box box-3">
+                      <div class="side-left"></div>
+                      <div class="side-right"></div>
+                      <div class="side-top"></div>
+                    </div>
+                    <div class="box box-4">
+                      <div class="side-left"></div>
+                      <div class="side-right"></div>
+                      <div class="side-top"></div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                <h2 class="h_3" style="margin-left: 20px; margin-bottom: 0px; margin-top: 20px;">Come viene generato il token?</h2>
+                <p class="p_3" style="margin-left: 20px; margin-right: 20px; margin-top: 5px;">Hpn è una rete di persone e attività che sponsorizzandosi sulla nostra piattaforma sotto forma di annunci pubblicitari ci permettono di ottenere delle commissioni che per la maggior parte sono utilizzate per rendere il token stabile e in un futuro non molto remoto anche spendibili nella vita reale.</p>
+                </div>
+                <div class="div_img_2" style="display: none;">
+                  <div style="display: flex; align-items: center; justify-content: center; margin-bottom: -30px;">
+                    <div class="loader">
+                        <div class="box box-1">
+                          <div class="side-left"></div>
+                          <div class="side-right"></div>
+                          <div class="side-top"></div>
+                        </div>
+                        <div class="box box-2">
+                          <div class="side-left"></div>
+                          <div class="side-right"></div>
+                          <div class="side-top"></div>
+                        </div>
+                        <div class="box box-3">
+                          <div class="side-left"></div>
+                          <div class="side-right"></div>
+                          <div class="side-top"></div>
+                        </div>
+                        <div class="box box-4">
+                          <div class="side-left"></div>
+                          <div class="side-right"></div>
+                          <div class="side-top"></div>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+             </div>
+
+
+             <div class="responsive_div1">
+                <div class="div_img_3" style="display: flex;flex-direction: column ; align-items: center; justify-content: center; margin-bottom: -30px;">
+                  <img class="img_4" src="https://i.ibb.co/zrdd5C6/undraw-chatting-re-j55r.png" style="width: 280px; margin-bottom: 40px; margin-top: 40px;">
+                </div>
+                    <div>
+                    <h2 class="h_4" style="margin-left: 20px; margin-bottom: 0px; margin-top: 30px;">Quali sono le tipologie di guadagno?</h2>
+                    <p class="p_4" style="margin-left: 20px; margin-right: 20px; margin-top: 5px;">Oltre alle diverse task disponibili che sono sempre in aggiornamento e in aggiunta Hpn ti permette di ricevere ricompense da tutti gli utenti che inseriscono il tuo codice referral al momento della registrazione, infatti, ogni volta che mintano eseguendo le task ottieni l'equivalente del 10% della ricompensa assegnata all'utente invitato.</p>
+                  </div>
+              </div>
+        
+         
+
+              <div class="responsive_div1">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                <img class="img1" src="https://i.ibb.co/pZCq53b/undraw-solution-mindset-re-57bf-1.png" style="width: 80%; margin-top: 30px; margin-bottom: 30px;">
+                </div>
+                <div>
+                <h2 class="h_1" style="margin-left: 20px; margin-bottom: 0px; margin-top: 2px;">Usare l'app rovina il cellulare?</h2>
+                <p class="p_1" style="margin-left: 20px; margin-right: 20px; margin-top: 5px;">Conosciamo diverse app che permettono agli utenti di minare direttamente dal loro dispositivo rovinando con il tempo le componenti di esso, i nostri sviluppatori lavorano costantemente affinchè la nostra app non influisca in maniera significativa ne sulle prestazioni che sulla vita dei dispositivi degli utenti.</p>
+               </div>
+               <img class="img2" src="https://i.ibb.co/pZCq53b/undraw-solution-mindset-re-57bf-1.png" style="margin-left: 50px; margin-top: 20px; object-fit:contain; width: 40% !important;">
+               </div>
+
+
+        <div class="responsive_div1">
+            <div class="div_img_3" style="display: flex;flex-direction: column ; align-items: center; justify-content: center; margin-bottom: -30px;">
+            <img class="img_5" src="https://i.ibb.co/ySZVsFX/log-screenshot.png" style="width: 100%;">
+            </div>
+                <div>
+                <h2 class="h_4" style="margin-left: 20px; margin-bottom: 0px; margin-top: 0px !important;">Fantastico! Come inizio?</h2>
+                <p class="p_4" style="margin-left: 20px; margin-right: 20px; margin-top: 5px;">Grazie per aver deciso di provare la nostra app, clicca sul bottone sottostante per connetterti ed entrare a far parte di Hpn, non vediamo l'ora di conoscerti, ci vediamo dall'altra parte!</p>
+              </div>
+          </div>
+    
+
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 80px; margin-top: 10px;">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="switch">
+                <div class="powersign"></div>
+            </label>
+        </div>
+
+       </div>
+        
+
+        <script>
+
+            //CECKBOX BUTTON FIVERR
+
+                
+          // Ottieni la checkbox dal documento
+          var checkbox = document.getElementById('checkbox');
+        
+        // Aggiungi un ascoltatore di eventi per controllare quando la checkbox viene selezionata
+        checkbox.addEventListener('change', function() {
+            // Controlla se la checkbox è selezionata
+            if (checkbox.checked) {
+                // Ritarda l'apertura della pagina di Google di 2 secondi
+                setTimeout(function() {
+                    window.location.href = 'hpn_app.html';
+                }, 100); // 2000 millisecondi = 2 secondi
+            }
+        });
+
+       
+
+        </script>
+    </body>
+
+    </html>
